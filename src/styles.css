@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin sans", sans-serif;
+}
+
+:root{
+    --primary-color: #1a1a1a;
+    --font-color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+img {
+    display: block;
+    max-height: 150px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    font-size: 3rem;
+    padding: 15px 20px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+    border: none;
+    font-size: 1.7rem;
+    background-color: var(--primary-color);
+    color: #828282;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.container, .menu{
+    background-image: url(../images/grilled-steak.jpeg);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt{
+    font-size: 7rem;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+    border: 3px solid var(--font-color);
+    display: inline-block;
+    font-size: 5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--primary-color);
+    padding: 20px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.card button {
+    background-color: black;
+    color: var(--font-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+span {
+    text-align: center;
+}
+
+.address {
+    background-color: var(--primary-color);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.address > * {
+    margin-bottom: 20px;
+}
+
+.address h2 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.address span {
+    font-size: 2.8rem;
+    display: block;
+}
